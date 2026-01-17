@@ -1,16 +1,17 @@
-/*create database dbskol;*/
+/*this is for creating database*/
+CREATE DATABASE dbskol;
 
-/*create table tblStudents(
+/*this is for creating table*/
+CREATE TABLE tblStudents(
 	SID int primary key auto_increment,
     FirstName varchar(16) not null,
     LastName varchar(16) not null,
     PhoneNumber varchar(11),
     Schoolarship bool not null,
     DateEnrolled date not null
-);*/
+);
 
-
-
+/*this is for insert data to table*/
 INSERT INTO tblstudents (
 	FirstName,
     LastName,
