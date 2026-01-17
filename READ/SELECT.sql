@@ -18,3 +18,14 @@ SELECT * FROM tblemployees WHERE LastName = "Santos" AND Age >= 18;
 
 /*Select All Employees with the Last Name "Santos" or their age must be 30 and above*/
 SELECT * FROM tblemployees WHERE LastName = "Santos" OR Age >= 18;
+
+/*Selecting column/parameter*/
+SELECT FirstName, LastName FROM tblemployees WHERE LastName = "Santos";
+
+/*Select Employees Address without any repeating Data*/
+SELECT DISTINCT LastName FROM tblemployees;
+
+/*Get the Count of employees Address wothout any repeating Address*/
+SELECT COUNT(DISTINCT LastName) FROM tblemployees;
+/*Get all*/
+SELECT COUNT(*) FROM tblemployees;
