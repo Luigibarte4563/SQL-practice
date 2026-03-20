@@ -6,7 +6,7 @@ CREATE TABLE products (
     product_name VARCHAR(100) NOT NULL,
     manufacture_date DATE NOT NULL,
     price DECIMAL(10,2) DEFAULT 0.0,
-    in_stock TINYINT(1) DEFAULT 1,
+    in_stock TINYINT(1) DEFAULT 1 CHECK (in_stock IN (0,1),
     product_description TEXT
 );
 
